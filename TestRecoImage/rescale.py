@@ -1,3 +1,10 @@
+# Function: rescaleFrame
+# Input: frame, scale
+# Output: resized frame
+
+# Author: Chapuis Samuel
+
+
 import cv2 as cv
 
 def rescaleFrame(frame, scale=0.75):

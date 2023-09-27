@@ -1,3 +1,10 @@
+#################################################
+# 												
+# 		Author: Chapuis Samuel					
+# 		For: Dassault Contest					
+#												
+################################################# 
+
 import cv2 as cv
 import rescale as rescale
 
