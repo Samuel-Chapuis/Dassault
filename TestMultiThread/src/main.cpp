@@ -4,7 +4,6 @@
 
 #include "../include/Task2.h"
 #include "../include/Task1.h"
-
 int main()
 {
     std::thread t1( [] () {
