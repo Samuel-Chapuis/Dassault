@@ -1,0 +1,78 @@
+
+\documentclass{report}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}					% Police Helvetica
+\usepackage[a4paper, margin=2cm]{geometry} 	% Marges
+\setlength{\parindent}{0pt} 				% Supprime l'indentation des paragraphes
+
+\usepackage{xcolor} 						% Pour les couleurs
+\usepackage{background} 					% Pour les images de fond
+\usepackage{fancyhdr}						% Pour les en-têtes
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=1,
+angle=0,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{images/PageDeGarde.png}
+  }
+}
+
+\begin{document}
+	\begin{titlepage}
+		\BgThispage
+		\begin{center}
+			\vspace*{2cm}
+			\textcolor{white}{
+					\large
+					xx/yy/zzzz
+				}
+			\fontsize{50}{60} % Taille de la police et interligne
+			\sffamily % Active la police sans serif (Helvetica dans ce cas)
+			
+			\textcolor{white}{\rule{\textwidth}{1pt}}
+			\textbf{\textcolor{white}{Dassault UAV Challenge}}
+			\raisebox{1.3cm}[0pt][0pt]{\textcolor{white}{\rule{\textwidth}{1pt}}}
+
+			% \vspace*{0.1cm}
+			\normalsize
+			\rmfamily % Reviens à la police par défaut (ici, Latin Modern)
+			\textcolor{white}{
+					\Huge
+					\underline{Auteurs :} \\
+				}
+
+			\vspace*{0.3cm}
+			\textcolor{white}{
+				\Large
+				\textbf{Aurelien \textsc{Coppé}} \\
+				\textbf{Samuel \textsc{Chapuis}} \\
+				\textbf{Matéo \textsc{Cancre}} \\
+				\textbf{Paul \textsc{Coste}} \\
+			}
+
+		\end{center}
+	\end{titlepage}
+	\backgroundsetup{contents={}}
+
+	\chapter{Présentation du concours}
+		\section{Équipe Organisatrice}
+		\input{sections/EquipeOrganisatrice.txt}
+
+		\section{Organisation du concours}
+		
+	\chapter{Présentation du projet}
+		
+
+
+
+
+
+
+\end{document}

@@ -15,7 +15,7 @@ cap.set(3, 640)
 cap.set(4, 480)
 
 # model
-model = YOLO("yolo-Weights/yolov8n.pt")
+model = YOLO("TestRecoImage/yolo-Weights/yolov8n.pt")
 
 # object classes
 classNames = ["person"
